@@ -2,9 +2,9 @@
 
 ## Foreword
 
-This guide will not be updated. I no longer user Chrome Remote Desktop as I switched to a headless setup.
+This guide will not be updated. I no longer use Chrome Remote Desktop as I switched to a headless setup.
 
-## Intro
+## Guide
 
 Ubuntu supports multiple display sessions, and Chrome Remote Desktop will (by default) leverage this feature. That means you can be connected on the machine itself, and have several applications open; when you connect over remote desktop, it will start a new session (without your existing state). Conversely, if you start doing something remotely, then try to finish it up on the machine locally, all the apps you had open won't appear on the local display. As well as being a bit annoying, this can cause all sorts of nasty bugs (e.g the most recent state in one session clobbering the other during shutdown; launching applications in one session and they actually appear in the other... it's a real mess). Follow these steps to override the "smart" functionality, and just have a single session that's shared between local and remote access.
 
